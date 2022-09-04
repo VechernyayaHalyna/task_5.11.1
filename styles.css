@@ -37,6 +37,19 @@ article {
     border-bottom: 1px solid rgb(0, 60, 255);
 }
 
+article:nth-child(2n) {
+background-color: aquamarine;
+}
+
+article.important::before { 
+    content: "New!";
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    margin:  0;
+    padding: 0;
+}
+
 article a {
     color: black;
     text-decoration: none;
@@ -49,6 +62,7 @@ article a:hover {
 article h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .article-meta {
